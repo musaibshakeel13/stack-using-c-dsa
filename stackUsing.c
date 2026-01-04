@@ -17,7 +17,7 @@ void main(){ int choice;
         case 1: push();break;
         case 2: pop();break;
         case 3: display();break;
-        default : printf("invalid choice");
+        default : printf("invalid choice\n");
     }
     }
     while(choice!=4);
@@ -27,7 +27,7 @@ void main(){ int choice;
 void push(){
     int n;
     if(top==maxsize-1){
-        printf("\nstack is overflow");
+        printf("stack is overflow\n");
     }
     else{
         printf("Enter an element to push into the stack:");
@@ -39,8 +39,26 @@ void push(){
 
 }
 void pop(){
+     int n;
+    if(top==-1){
+        printf(" stack is empty\n");
+    }
+    else{
+        n=stack[top];
+        top--;
+        printf("poped element is: %d\n",n);
+    }
 
 }
 void display(){
+    if(top==-1){
+        printf("stack is empty\n");
+    }
+    else{
+        printf("Element of stack is\n");
+        for(int i=top;i>=0;i--){
+            printf("%d\n",stack[i]);
+        }
+    }
 
 }
