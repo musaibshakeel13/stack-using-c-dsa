@@ -6,7 +6,6 @@ void pop();
 void display();
 
 void main(){ int choice;
-    
     do{
     printf("-------STACK--------");
     printf("\n 1.push\n 2.pop\n 3.display\n 4.exit\n");
@@ -21,8 +20,6 @@ void main(){ int choice;
     }
     }
     while(choice!=4);
-
-
 }
 void push(){
     int n;
@@ -62,3 +59,4 @@ void display(){
     }
 
 }
+
