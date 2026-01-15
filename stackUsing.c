@@ -30,9 +30,7 @@ void push(){
         scanf("%d",&n);
         top++;
         stack[top]=n;
-
     }
-
 }
 void pop(){
      int n;
@@ -44,7 +42,6 @@ void pop(){
         top--;
         printf("poped element is: %d\n",n);
     }
-
 }
 void display(){
     if(top==-1){
@@ -57,6 +54,7 @@ void display(){
         }
     }
 }
+
 
 
 
